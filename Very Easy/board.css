@@ -1,0 +1,22 @@
+#grid-cont {
+  display: grid;
+  grid-template-columns: repeat(8, 100px);
+}
+
+.box {
+  background: rgb(255, 255, 255);
+  width: 98px;
+  height: 98px;
+  border: 2px solid black;
+}
+
+.box:nth-child(16n + 1),
+.box:nth-child(16n + 3),
+.box:nth-child(16n + 5),
+.box:nth-child(16n + 7),
+.box:nth-child(16n + 10),
+.box:nth-child(16n + 12),
+.box:nth-child(16n + 14),
+.box:nth-child(16n + 16) {
+  background: rgb(0, 0, 0);
+}
